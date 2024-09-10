@@ -1,22 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>De taza's Simple HTML webpage</title>
-    <meta charset="utf-8">
+     <title>De taza's Webpage</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
 <style>
     body {
-    position: relative; 
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 100px
   }
-  #section1 {padding-top:100px;height:1px;color: #000000; background-color: #ffffff;}
-  #section2 {padding-top:100px;height:1px;color: #000000; background-color: #ffffff;}
-  #section3 {padding-top:100px;height:1px;color: #000000; background-color: #ffffff;}
-  #section4 {padding-top:300px;height:1px;color: #000000; background-color: #ffffff;}
+  .navbar-inverse {
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+  .navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  #section1, #section2, #section3, #section4 {
+    color: #333333;
+    background-color: #ffffff;
+    padding: 60px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #section1 {
+    margin-top: 50px; /* Add margin to prevent the navbar from covering it */
+  }
+  #section1 h1, #section4 h2 {
+    color: #000000;
+  }
+  #section2 p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555555;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
 </style>
 </head>
+
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -41,21 +84,45 @@
           </div>
         </div>
       </nav>    
-      <div id="section1" class="container-fluid">
+      
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Heading</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Paragraph</a></li>
+          <li><a href="#section2">Picture</a></li>
+          <li><a href="#section3">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="section1" class="container-fluid">
         <h1>This is the Heading</h1>
         </div>
     <div id="section2" class="container-fluid">
-        <p>This is a paragraph. The early morning sun cast a warm golden glow over the rolling hills, as the mist slowly lifted from the valleys below. Birds chirped melodiously in the distance, greeting the new day with their cheerful songs. The smell of fresh dew on the grass and the sweet scent of blooming flowers filled the air, creating a peaceful and serene atmosphere. It was a perfect start to a beautiful day.</p>
-    </div>
-    <div id="section3" class="container-fluid">
-        <img src="img.jpg" alt="This is an image" width="500">
-    </div>
-    <div id="section4" class="container-fluid">
-        <h2>Links:</h2>
+      <p>This is a paragraph. The early morning sun cast a warm golden glow over the rolling hills, as the mist slowly lifted from the valleys below. Birds chirped melodiously in the distance, greeting the new day with their cheerful songs. The smell of fresh dew on the grass and the sweet scent of blooming flowers filled the air, creating a peaceful and serene atmosphere. It was a perfect start to a beautiful day.</p>
+  </div>
+
+  <div id="section3" class="container-fluid">
+    <img src="five.jpg" alt="This is an image" class="img-responsive">
+  </div>
+
+  <div id="section4" class="container-fluid">
+    <h2>Links:</h2>
     <ul>
-        <li><a href="https://www.example.com" target="_blank">Example Link</a></li>
-        <li><a href="https://www.tiktok.com/foryou?lang=en" target="_blank">TikTok</a></li>
-        <li><a href="https://x.com" target="_blank">Twitter / X</a></li>
+      <li><a href="https://www.example.com" target="_blank">Example Link</a></li>
+      <li><a href="https://www.tiktok.com/foryou?lang=en" target="_blank">TikTok</a></li>
+      <li><a href="https://x.com" target="_blank">Twitter / X</a></li>
     </ul>
     </div>
 </body>
